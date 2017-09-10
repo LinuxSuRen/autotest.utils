@@ -16,6 +16,7 @@
 
 package com.surenpi.autotest.utils;
 
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
@@ -230,5 +231,44 @@ public class StringUtils
 	public static String defaultIfBlank(String text, long numText)
 	{
 		return defaultIfBlank(text, String.valueOf(numText));
+	}
+
+	/**
+	 * @see #toMap(String, String, String)
+	 * @param mapStr
+	 * @return
+	 */
+	public static Map<String, String> toMap(String mapStr)
+	{
+		return StringUtils.toMap(mapStr, ";", ":");
+	}
+
+	/**
+	 * 把特定字符串转为Map结构
+	 * @param mapStr 例如key1:value1;key2:value2
+	 * @param entrySp 元素分隔符号
+	 * @param keySp key和value的分割符号
+	 * @return
+	 */
+	public static Map<String, String> toMap(String mapStr, String entrySp, String keySp)
+	{
+		Map<String, String> columnMap = null;
+		if(mapStr == null)
+		{
+			return columnMap;
+		}
+
+		columnMap = new HashMap<String, String>();
+		String[] entryArray = mapStr.split(entrySp);
+		for(String entryStr : entryArray)
+		{
+			String[] entry = entryStr.split(keySp);
+			if(entry.length >= 2)
+			{
+				columnMap.put(entry[0], entry[1]);
+			}
+		}
+
+		return columnMap;
 	}
 }
