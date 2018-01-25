@@ -9,13 +9,17 @@
 	</parent>
 
 	<artifactId>autotest.utils</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0-20180125-SNAPSHOT</version>
 	
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
