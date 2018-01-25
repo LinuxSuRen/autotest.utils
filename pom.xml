@@ -10,6 +10,12 @@
 
 	<artifactId>autotest.utils</artifactId>
 	<version>1.0.0-20180125-SNAPSHOT</version>
+
+	<scm>
+		<connection>scm:git:https://github.com/LinuxSuRen/autotest.utils</connection>
+		<url>https://github.com/LinuxSuRen/autotest.utils</url>
+		<developerConnection>scm:git:https://github.com/LinuxSuRen/autotest.utils</developerConnection>
+	</scm>
 	
 	<build>
 		<plugins>
