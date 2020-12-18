@@ -8,13 +8,13 @@
 	</parent>
 
 	<artifactId>autotest.utils</artifactId>
-	<version>1.0.2</version>
+	<version>1.0.3-SNAPSHOT</version>
 
 	<scm>
 		<connection>scm:git:git@github.com:LinuxSuRen/autotest.utils</connection>
 		<url>git@github.com:LinuxSuRen/autotest.utils</url>
 		<developerConnection>scm:git:git@github.com:LinuxSuRen/autotest.utils</developerConnection>
-	  <tag>v1.0.2</tag>
+	  <tag>v1.0.1</tag>
   </scm>
 	
 	<build>
